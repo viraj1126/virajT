@@ -18,4 +18,11 @@ public class Serviceimpl implements servicei{
 		
 		return sr.save(student) ;
 	}
+
+	@Override
+	public Student save(Student student, int id) {
+		// TODO Auto-generated method stub
+		student.setId(id);
+		return sr.save(student);
+	}
 }
